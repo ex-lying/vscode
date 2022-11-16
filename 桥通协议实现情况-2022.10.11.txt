@@ -1,0 +1,120 @@
+1、设备注册（设备绑定） 
+    cloud/ele-dtu/<deviceid>/evt/reg/fmt/json
+    实现了
+
+    服务器下发电梯编号给DTU
+    cloud/ele-dtu/<deviceid>/cmd/reg/fmt/json
+    实现了
+
+2、在线心跳
+    cloud/ele-dtu/<deviceid>/evt/hbt/fmt/json
+    监听了，但是没有上报ccbin
+
+3、解除绑定
+    cloud/ele-dtu/<deviceid>/cmd/dlt/fmt/json
+    未监听
+
+4、设备信息上报
+    cloud/ele-dtu/<deviceid>/evt/dst/fmt/json
+    监听了，但是没有上报async
+
+    服务器下发更新设备信息的请求给DTU
+    cloud/ele-dtu/<deviceid>/cmd/dst/fmt/json
+    桥通服务实现，上游服务未实现
+
+5、配置信息
+    cloud/dtu/<deviceid>/evt/cfg/fmt/json
+    监听了，但是没有上报ccbin
+
+    修改参数配置时，服务器下发参数配置给DTU
+    cloud/dtu/<deviceid>/cmd/cfg/fmt/json
+    桥通服务实现，上游服务未实现
+
+6、远程更新(dtu升级)
+    cloud/dtu/<deviceid>/cmd/soft/fmt/json
+    未实现
+
+    DTU执行升级后，发送升级结果到服务器
+    cloud/dtu/<deviceid>/evt/soft/fmt/json
+    未实现
+
+7、远程重启
+    cloud/dtu/<deviceid>/cmd/reboot/fmt/json
+    实现了
+
+    DTU接收到重启指令后，回复服务器，并重启DTU
+    cloud/dtu/<deviceid>/evt/reboot/fmt/json
+    监听了，但是没有上报ccbin
+
+8、电梯实时信息
+    开始查看实时状态时，服务器下发
+    cloud/ele/<elenum>/cmd/stas/fmt/json
+    实现了
+
+    停止查看实时状态时，服务器下发
+    cloud/ele/<elenum>/cmd/stos/fmt/json
+    实现了
+
+    实时上报
+    cloud/ele/<elenum>/evt/rts/fmt/json
+    实现了
+
+9、扶梯实时信息
+    cloud/ele/<elenum>/evt/esc-rts/fmt/json
+    未实现
+
+10、电梯故障信息
+    cloud/ele/<elenum>/evt/flt/fmt/json
+    实现了
+
+11、电梯故障恢复 
+    cloud/ele/<elenum>/evt/flt-rec/fmt/json
+    未实现
+
+12、扶梯故障信息
+    cloud/ele/<elenum>/evt/esc-flt/fmt/json
+    未实现
+
+13、扶梯故障恢复
+    cloud/ele/<elenum>/evt/esc-flt-rec/fmt/json 
+    未实现
+
+14、报警
+    cloud/ele/<elenum>/evt/alr/fmt/json
+    未实现
+
+15、报警确认
+    cloud/ele/<elenum>/cmd/alr-cfm/fmt/json
+    未实现
+
+16、报警恢复
+    cloud/ele/<elenum>/evt/alr-rec/fmt/json
+    未实现
+
+17、电梯运行模式改变
+    cloud/ele/<elenum>/evt/mode/fmt/json
+    未实现
+
+18、扶梯运行模式改变
+    cloud/ele/<elenum>/evt/esc-mode/fmt/json
+    未实现
+
+19、电梯统计信息
+    cloud/ele/<elenum>/evt/sts/fmt/json
+    未实现
+
+20、扶梯统计信息
+    cloud/ele/<elenum>/evt/esc-sts/fmt/json
+    未实现
+
+21、DTU故障
+    cloud/ele-dtu/<deviceid>/evt/dtu-flt/fmt/json
+    监听了，未往后续服务上报
+
+22、DTU故障恢复
+    cloud/ele-dtu/<deviceid>/evt/dtu-flt-rec/fmt/json
+    监听了，未往后续服务上报
+
+23、DTU 在线状态通知
+    cloud/dtu/<deviceid>/evt/online/fmt/json
+    实现了

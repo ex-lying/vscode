@@ -1,0 +1,87 @@
+--------------------------------------------------------------------windows-cmd--------------------------------------------------
+wsl查看所有linux发行版
+wsl --list --verbose
+
+wsl关闭对应发行版的linux
+wsl -t Ubuntu
+
+wsl关闭所有linux发行版
+wsl --shutdown
+
+
+
+
+--------------------------------------------------------------------redis--------------------------------------------------
+redis-cli -a oomoeyaij5Ahp6teipia
+
+
+
+
+--------------------------------------------------------------------mysql--------------------------------------------------
+mysql -u root -p
+
+
+
+
+
+--------------------------------------------------------------------rabbitmq--------------------------------------------------
+查看所有队列
+rabbitmqctl list_queues
+
+查看状态
+rabbitmqctl status
+
+
+
+--------------------------------------------------------------------linux--------------------------------------------------
+查看文件夹当前路径
+pwd
+
+启动ssh服务
+sudo /etc/init.d/ssh restart
+
+后台启动idea 工具
+nohup /opt/idea-IC-222.3739.54/bin/idea.sh &
+
+查询一个进程有多少个子线程
+top -H p 3635290(进程id)
+
+多条件查询
+grep 22160057 tocol_output.log | grep rts.latest.update.index | grep 16:10
+
+输出匹配条件内容的前后10行
+grep -C 10 rts.latest.update.index 22160057.log
+
+输出匹配条件内容的前10行
+grep -B 10 rts.latest.update.index 22160057.log
+
+输出匹配条件内容的后10行
+grep -A 10 rts.latest.update.index 22160057.log
+
+查看ip
+ip addr show
+
+启动ssh
+sudo /etc/init.d/ssh restart
+
+后台运行某个程序
+nohup /opt/idea-IC-222.3739.54/bin/idea.sh &
+
+
+--------------------------------------------------------------------kafka--------------------------------------------------
+kafka-consumer-groups.sh --bootstrap-server 192.168.4.130:9092 --describe --group  deviceRD
+
+kafka-consumer-groups.sh --zookeeper 192.168.102.17:2181 -describe --group deviceRD
+
+
+kafka-consumer-groups.sh --bootstrap-server 192.168.102.17:9092 --describe --group  deviceRD
+
+
+/data/software/kafka_2.13-2.7.0/bin/kafka-consumer-groups.sh --bootstrap-server 192.168.4.130:9092 --describe --group deviceRD
+
+
+--------------------------------------------------------------------git--------------------------------------------------
+删除绑定的远程仓库
+git remote remove origin
+绑定远程仓库
+git remote add origin git@github.com:git_username/repository_name.git

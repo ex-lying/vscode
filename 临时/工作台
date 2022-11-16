@@ -1,0 +1,52 @@
+sudo /etc/init.d/ssh restart
+
+nohup /opt/idea-IC-222.3739.54/bin/idea.sh &
+
+
+
+设备未注册
+
+设备配置信息上报
+
+
+20220400
+
+
+22160050
+
+桥通设备redis查询绑定电梯为空
+
+
+iot:device:863930053371005
+
+
+00 0E 03 00 10 05 02 31 39 07 02 31 33 08 04 42 42 32 30 00 13 04 08 10 08 0C 10 80 19 18 E8 07 20 F0 2E 28 87 E4 06 30 29 38 01
+
+
+
+git@my:ex-lying/practice.git
+
+git remote add origin git@my.github.com:ex-lying/vscode.git
+
+
+git push ex-lying:YwysHnsntzwx123654@github.com:ex-lying/vscode.git
+
+
+设备基础信息liftProduction不存在，liftId:
+
+
+
+ssh-keygen -t rsa -C 1608379266@qq.com
+
+
+ssh-keygen -t rsa -C ex-lying@github.com
+
+
+ssh-keygen -t rsa -f ~/.ssh/id_rsa2 -C lying@git.thopenapi.com
+
+
+
+
+
+
+
