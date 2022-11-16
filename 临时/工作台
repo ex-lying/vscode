@@ -34,7 +34,7 @@ git push ex-lying:YwysHnsntzwx123654@github.com:ex-lying/vscode.git
 
 设备基础信息liftProduction不存在，liftId:
 
-
+ssh-keygen -t rsa -C '1608379266@qq.com' -f id_rsa_github
 
 ssh-keygen -t rsa -C 1608379266@qq.com
 
@@ -43,6 +43,8 @@ ssh-keygen -t rsa -C ex-lying@github.com
 
 
 ssh-keygen -t rsa -f ~/.ssh/id_rsa2 -C lying@git.thopenapi.com
+
+git remote add origin git@github:ex-lying/vscode.git
 
 
 
