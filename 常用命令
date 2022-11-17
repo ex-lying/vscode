@@ -67,6 +67,12 @@ sudo /etc/init.d/ssh restart
 后台运行某个程序
 nohup /opt/idea-IC-222.3739.54/bin/idea.sh &
 
+查看权限
+ls -l
+
+更改文件拥有者（把id_rsa_my文件的拥有者改为liying）
+chown liying.liying id_rsa_my
+
 
 --------------------------------------------------------------------kafka--------------------------------------------------
 kafka-consumer-groups.sh --bootstrap-server 192.168.4.130:9092 --describe --group  deviceRD
@@ -83,5 +89,9 @@ kafka-consumer-groups.sh --bootstrap-server 192.168.102.17:9092 --describe --gr
 --------------------------------------------------------------------git--------------------------------------------------
 删除绑定的远程仓库
 git remote remove origin
+
 绑定远程仓库
 git remote add origin git@github.com:git_username/repository_name.git
+
+git多账号配置
+https://cloud.tencent.com/developer/article/1809647?from=article.detail.1015037
