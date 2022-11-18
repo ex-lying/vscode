@@ -1,0 +1,24 @@
+配置多账号
+参考 https://cloud.tencent.com/developer/article/1809647?from=article.detail.1015037
+
+1、生成ssh key
+ssh-keygen -t rsa -C 'second@mail.com' -f id_rsa_second
+
+2、在对应的git账号里面添加生成的pub文件的密钥
+
+3、在.ssh目录里面添加config文件
+如下：
+Host github
+HostName github.com
+IdentityFile C:\Users\root\.ssh\id_rsa_github
+PreferredAuthentications publickey
+User 1608379266@qq.com
+
+Host gitlab
+HostName git.thopenapi.com
+IdentityFile C:\Users\root\.ssh\id_rsa_gitlab
+PreferredAuthentications publickey
+User 1608379266@qq.com
+Port 34587
+
+
