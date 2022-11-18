@@ -1,20 +1,9 @@
 {
-  "LiftId": 123,
-  "SerialNumber": "222222",
-  "Platform": "monake",
-  "DropOffDateTime": "2022-11-14 15:56:28.999",
-  "PickupDateTime": "2022-11-14 15:56:28.999",
-  "ModelNumber": "monakev1",
-  "上报时间": "2022-11-14 15:56:28",
-  "信号强度": "23",
-  "安全回路断开": "正常",
-  "扶梯上行": "上行",
-  "扶梯下行": "",
-  "扶梯锁梯信号": "正常",
-  "故障状态": "正常",
-  "检修状态": "正常",
-  "电梯故障代码": "0",
-  "网络类型": "4G",
-  "运行状态": "运行",
-  "速度异常": "正常"
+  "topic": "deviceRD",
+  "dateTime": "2022-11-16 15:46:41",
+  "from": "thcl-platform-service",
+  "to": "thcl-ccbin-service",
+  "description": "设备运行数据",
+  "type": "DeviceRD",
+  "data": ""
 }

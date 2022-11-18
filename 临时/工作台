@@ -46,6 +46,10 @@ ssh-keygen -t rsa -f ~/.ssh/id_rsa2 -C lying@git.thopenapi.com
 
 git remote add origin git@github:ex-lying/vscode.git
 
+rtd:device_on_line:device_id:12381
+
+不用于web开发
+
 
 
 
