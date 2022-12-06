@@ -1,0 +1,70 @@
+
+
+电梯绑定设备redis缓存key前缀： iot:device:%s    说明：%s设备序列号 
+	
+		    
+数据示例：
+	{"deviceType":"P100","groupIds":"0,","liftBrand":"迅达","liftBrandEn":"Schindler","liftCode":"22160201","liftGroup":"","liftId":24321,"liftMainboard":"Cadigc","liftType":"杂物电梯","platform":"rofound","projectName":"P100迅达测试项目","serialNumber":"22160201","usingUnitName":"L5"}
+
+
+
+java字段：
+
+	    /**
+	     * 电梯ID
+	     */
+	    private Integer liftId;
+	    /**
+	     * 设备编码
+	     */
+	    private String liftCode;
+	    /**
+	     * 电梯品牌
+	     */
+	    private String liftBrand;
+	    /**
+	     * 品牌英文名称
+	     */
+	    private String liftBrandEn;
+	    /**
+	     * 电梯主板
+	     */
+	    private String liftMainboard;
+	    /**
+	     * 电梯品种
+	     */
+	    private String liftType;
+	    /**
+	     * 设备类型
+	     */
+	    private String deviceType;
+	    /**
+	     * 设备类型
+	     */
+	    private String groupIds;
+
+	    /**
+	     * 电梯内部编码
+	     */
+	    private String usingUnitName;
+
+	    /**
+	     * 项目名称
+	     */
+	    private String projectName;
+
+	    /**
+	     * 平台
+	     */
+	    private String platform;
+
+
+	    /**
+	     * 设备编号
+	     */
+	    private String  serialNumber;
+
+	    /**
+	     * 当前电梯 groupId
+	     */
+	    private String liftGroup;

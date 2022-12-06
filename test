@@ -1,0 +1,60 @@
+-- qiaotong 下发报文
+解绑
+{
+    "productKey": "Qiaotong@@Qiaotong@@Qiaotong",
+    "deviceName": "123456",
+    "topic": "/Qiaotong@@Qiaotong@@Qiaotong/123456/thing/service/unbind/post",
+    "data": {
+        "id": "1664359543388",
+        "time": 1524448722000,
+        "params": {
+    
+        },
+        "method": "thing.service.unbind"
+    }
+}
+
+
+-- 重启
+
+
+{
+  "data": {
+    "id": "1664359543388",
+    "time": 1524448722000,
+    "params": {},
+    "method": "thing.service.restart"
+  },
+  "productKey": "Qiaotong@@Qiaotong@@Qiaotong",
+  "deviceName": "123456",
+  "topic": "/Qiaotong@@Qiaotong@@Qiaotong/123456/thing/service/unbind/post"
+}
+
+
+-- 开启实时
+
+{
+  "data": {
+    "id": "1664359543388",
+    "time": 1524448722000,
+    "params": {},
+    "method": "thing.service.enableProperty"
+  },
+  "productKey": "Qiaotong@@Qiaotong@@Qiaotong",
+  "deviceName": "123456",
+  "topic": "/qiaotong@@qiaotong@@qiaotong/123456/thing/service/enableProperty/post"
+}
+
+-- 关闭实时
+
+{
+  "data": {
+    "id": "1664359543388",
+    "time": 1524448722000,
+    "params": {},
+    "method": "thing.service.disableProperty"
+  },
+  "productKey": "Qiaotong@@Qiaotong@@Qiaotong",
+  "deviceName": "123456",
+  "topic": "/Qiaotong@@Qiaotong@@Qiaotong/123456/thing/service/disableProperty/post"
+}

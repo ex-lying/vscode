@@ -1,7 +1,37 @@
-1、桥通联调
-2、新时达默纳克接入
-3、默纳克实时通信只能低于100的连接（同时看100的电梯）
-实时，在线离线，故障
+{
+  "data": {
+    "id": "863930053371006",
+    "time": 1524448722000,
+    "params": {},
+    "method": "thing.service.enableProperty"
+  },
+  "productKey": "elevatorstar@@elevatorstar@@elevatorstar",
+  "deviceName": "10000212855",
+  "topic": "/elevatorstar@@elevatorstar@@elevatorstar/10000212855/thing/service/enableProperty/post"
+}
 
-4、默纳克的连接，关闭方案
-5、接收到实时开启，判断是否已经打开了，重新
+{
+  "data": {
+    "id": "1664359543388",
+    "time": 1524448722000,
+    "params": {},
+    "method": "thing.service.disableProperty"
+  },
+  "productKey": "elevatorstar@@elevatorstar@@elevatorstar",
+  "deviceName": "10000212855",
+  "topic": "/elevatorstar@@elevatorstar@@elevatorstar/10000212855/thing/service/disableProperty/post"
+}
+
+{
+  "productKey": "elevatorstar@@elevatorstar@@elevatorstar",
+"deviceName": "10000214824",
+"topic": "/elevatorstar@@elevatorstar@@elevatorstar/10000214824/thing/event/online/post",
+"data": {
+  "time": 1669715594367,
+  "params": {},
+  "id": "44801904-9786-4fb3-b62e-a9b532d36f19",
+  "method": "thing.event.online.post"
+}
+}
+
+
