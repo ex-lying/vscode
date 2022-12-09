@@ -73,6 +73,10 @@ ls -l
 更改文件拥有者（把id_rsa_my文件的拥有者改为liying）
 chown liying.liying id_rsa_my
 
+curl 命令
+curl -H 请求头 -d 请求体 -X POST 接口地址
+curl -H "Content-Type: application/json" -d '{"callbackType":"4","data":{"eventCode":6,"eventData":"E41","eventRealTimeDatas":{"上报时间":"2018-03-15 14:53:58","串口通信异常":"故障","供电中断":"正常","信号强度":"19","开关门状态":"关门","是否有人":"无人","检修状态":"正常","楼层":"15层","消防状态":"正常","电梯控制器有密码":"无密码","电梯故障代码":"48","电梯故障困人信号":"正常","电梯轿厢满载信号":"未正常","电梯轿厢超载信号":"正常"," 电梯锁梯信号":"正常","电梯门区信号":"门区外","网络类型":"wifi","语音请求信号":"开关松开","超速信号":"正常","运行方向":"上行","运行状态":"正常"},"eventStatus":1,"eventTime":1535353352000,"factoryNO":"XXXXX","failureCodeDesc":"安全回路断开","msgSeq":358428086,"regCode":"748865688AUTO3DA018000000000","tdSerial":"1"}}' -X POST http://localhost:8011/thcl/event/callback/monake
+
 
 --------------------------------------------------------------------kafka--------------------------------------------------
 kafka-consumer-groups.sh --bootstrap-server 192.168.4.130:9092 --describe --group  deviceRD

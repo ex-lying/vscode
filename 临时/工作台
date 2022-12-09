@@ -3,26 +3,7 @@ sudo /etc/init.d/ssh restart
 nohup /opt/idea-IC-222.3739.54/bin/idea.sh &
 
 
-
-设备未注册
-
-设备配置信息上报
-
-
-20220400
-
-
-22160050
-
-桥通设备redis查询绑定电梯为空
-
-
-iot:device:863930053371005
-
-
-00 0E 03 00 10 05 02 31 39 07 02 31 33 08 04 42 42 32 30 00 13 04 08 10 08 0C 10 80 19 18 E8 07 20 F0 2E 28 87 E4 06 30 29 38 01
-
-
+18512859873   123456
 
 git@my:ex-lying/practice.git
 
@@ -48,7 +29,16 @@ git remote add origin git@github:ex-lying/vscode.git
 
 rtd:device_on_line:device_id:12381
 
-不用于web开发
+
+curl -H "Content-Type: application/json" -d '{"callbackType":"4","data":{"eventCode":6,"eventData":"E41","eventRealTimeDatas":{"上报时间":"2018-03-15 14:53:58","串口通信异常":"故障","供电中断":"正常","信号强度":"19","开关门状态":"关门","是否有人":"无人","检修状态":"正常","楼层":"15层","消防状态":"正常","电梯控制器有密码":"无密码","电梯故障代码":"48","电梯故障困人信号":"正常","电梯轿厢满载信号":"未正常","电梯轿厢超载信号":"正常"," 电梯锁梯信号":"正常","电梯门区信号":"门区外","网络类型":"wifi","语音请求信号":"开关松开","超速信号":"正常","运行方向":"上行","运行状态":"正常"},"eventStatus":1,"eventTime":1535353352000,"factoryNO":"XXXXX","failureCodeDesc":"安全回路断开","msgSeq":358428086,"regCode":"748865688AUTO3DA018000000000","tdSerial":"1"}}' -X POST http://localhost:8011/thcl/event/callback/monake
+
+curl -H "Content-Type: application/json" -d '{"id_nr":"31104101002012020131","fault_code":"6","fault_floor":"2","fault_time":"2022-11-30 15:08:22","running_status":{"Time_Stamps":"2022.11.30 11:23:11","Service_Mode":1,"Car_Status":1,"Car_Direction":2,"Door_Zone":false,"Car_Position":"21","Door_Status":true,"Passenger_Status":false,"Total_Running_Time":"1258.35","Present_Counter_Value":48493,"Door_Switch_Status":0,"Door_Lock_Status":1,"Safety_Circuit_Status":1,"Fault_Status":false,"Wirerope_Bending_Times":9698,"Group_Control":false,"Load_Status":0,"Inner_Orders":[],"Outer_Up_Orders":["1"],"Outer_Down_Orders":[],"Fire_Return":0,"Earthquake_Model":0,"Emergency_Power":0,"Serviceable":1,"Main_Power_Off":1,"Open_Button":0,"Open_Times":49020,"Fan_Status":0,"Holiday_Status":0,"Light_Status":0,"Remote_Lock":0,"Net_Ctrl":0,"Total_Run_Distance":436437,"X22":false,"X23":false,"Running_Distance":-1,"Reference_Floor_Open_Times":-1,"Open_Door_Times":-1,"Safe_Touch_Action_Times":-1,"Light_Action_Times":-1,"Car_Light_Times":-1,"Car_Light_Running_Time":-1,"Upward_Releveling_Times":-1,"Down_Releveling_Times":-1,"Door_Open_Status":false,"IBE":{"deviceType":null,"D1":null,"D2":null,"D3":null,"D4":null,"D5":null,"D6":null,"D7":null,"BDC1":null,"BDC2":null,"BDC3":null,"BDC4":null,"BDA1":null,"BDA2":null,"BDA3":null,"BDA4":null,"BDA5":null,"BDA6":null,"BDA7":null,"BDA8":null,"BDA9":null,"BDA10":null,"BDA11":null,"BDA12":null,"BDA13":null,"BDA14":null,"BDA15":null,"BDA16":null,"BDA17":null,"BDA18":null,"BDA19":null,"MA1":null,"MA2":null,"MA3":null,"MA4":null,"MA5":null,"MA6":null,"MD1":true,"MD2":true,"MD3":false,"MD4":false,"MD5":false,"MD6":null,"MD7":null,"MD8":false,"MD9":false,"MD10":null,"MD11":false,"MD12":false,"MD13":false,"MD14":false,"MD15":false,"MD16":null,"MD17":true,"MD18":false,"MD19":false,"MD20":false,"MD21":false,"MD22":true,"MD23":false,"MD24":false,"MD25":null,"MD26":null,"BDA20":true,"BDA21":null,"BDA22":false,"BDA23":false,"BDA24":null,"BDA25":11931,"BDA26":null,"BDA27":null,"BDA28":75501,"BDA29":null,"BDE1":null,"BDE2":null,"BDE3":null,"BDE4":null}}}' -X POST http://localhost:8011/thcl/event/callback/elevatorstar/fault
+
+
+
+
+
+
 
 
 
